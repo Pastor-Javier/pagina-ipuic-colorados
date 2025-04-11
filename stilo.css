@@ -1,0 +1,96 @@
+/* Estilos generales */
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #fff;
+    padding: 15px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Elementos de la lista */
+nav ul li {
+    margin: 0 20px;
+}
+
+/* Enlaces de navegación */
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    position: relative;
+    transition: font-size 0.3s ease-in-out;
+}
+
+/* Línea debajo al pasar el cursor */
+nav ul li a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #0073e6;
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+}
+
+/* Efecto hover: línea debajo y texto más grande */
+nav ul li a:hover {
+    font-size: 18px;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+nav {
+    display: flex;
+    justify-content: center; /* Centra los elementos */
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center; /* Centra los primeros tres */
+    align-items: center;
+}
+
+.especial {
+    margin-left: auto; /* Mueve el último item a la derecha */
+}
+
+.menu li a {
+    display: inline-block;
+    padding: 12px 18px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.especial a {
+    background-color: #0073e6;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.especial a:hover {
+    background-color: #005bb5;
+}
